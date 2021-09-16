@@ -1,3 +1,4 @@
+== to began ==
 01. create repository in git
 02. git clone `url`
 03. cd `folder-name`
@@ -7,3 +8,35 @@
 
 == to publish online ==
 07. login to heroku (just when see the dashboard is enough)
+
+== to add to git ==
+08. git add .
+09. git commit -m "message"
+10. git push origin HEAD
+
+== to initialize the project ==
+11. npm init
+12. npm i
+13. npm i json-server(currently we have in our local computer, this is for heroku to know) [once done check package.json]
+14. create a file => server.js
+/*
+const jsonServer = require('json-server');
+const server = jsonServer.create();
+const router = jsonServer.router('db.json');
+const middleware = jsonServer.defaults();
+const port = process.env.PORT || 3000;
+
+server.use(middleware);
+server.use(router);
+
+server.listen(port);
+*/
+15. in package.json, script, after test=> "start": "node server.js" (this will be a mini backend)
+16. create .gitignore
+/*
+node_modules
+*/
+17. git add . 
+18. git commit -m "add server"
+19. git push origin HEAD
+
