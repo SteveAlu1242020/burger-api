@@ -1,0 +1,9 @@
+01. create repository in git
+02. git clone `url`
+03. cd `folder-name`
+04. make a json file
+05. npm install json-server
+06. json-server --watch databaseName.json
+
+== to publish online ==
+07. login to heroku (just when see the dashboard is enough)
